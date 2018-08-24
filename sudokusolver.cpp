@@ -153,10 +153,8 @@ int main() {
 	ifstream ifs;
 	ifs.open("question.txt"); //题目的txt要保证9*9，字符间有空格
 	//char c = ifs.get();
-	int i = 0;
-	while (ifs.peek() != EOF) {		//防止多读一行
+	for(int i=0; i<81; i++) {
 		ifs >> board[i / 9][i % 9];
-		i++;
 	}
 	ifs.close();
 
