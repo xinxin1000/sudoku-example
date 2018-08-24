@@ -120,9 +120,9 @@ class Solution {
 public:
 	bool solveSudoku(vector<vector<char>> &board) {
 		cells = array<array<cell, 9>, 9>(); // clear array
-											// Decoding input board into the internal cell matrix.
-											// As we do it - constraints are propagated and even additional values are set as we go
-											// (in the case if it is possible to unambiguously deduce them).
+		// Decoding input board into the internal cell matrix.
+		// As we do it - constraints are propagated and even additional values are set as we go
+		// (in the case if it is possible to unambiguously deduce them).
 		for (int i = 0; i < 9; i++)
 		{
 			for (int j = 0; j < 9; j++) {
@@ -148,20 +148,20 @@ public:
 };
 
 int main() {
-	vector<vector<char>> board(9, vector<char>(9));	//ÐèÒª±£Ö¤boardÊÇ9*9µÄ£¬Ö»ÓÐÊý×Ö£¬¿Õ¸ñÓÃ'.'´úÌæ
+	vector<vector<char>> board(9, vector<char>(9));	//éœ€è¦ä¿è¯boardæ˜¯9*9çš„ï¼Œåªæœ‰æ•°å­—ï¼Œç©ºæ ¼ç”¨'.'ä»£æ›¿
 
 	ifstream ifs;
-	ifs.open("Êý¶ÀÌâÄ¿.txt"); //ÌâÄ¿µÄtxtÒª±£Ö¤9*9£¬×Ö·û¼äÓÐ¿Õ¸ñ
+	ifs.open("æ•°ç‹¬é¢˜ç›®.txt"); //é¢˜ç›®çš„txtè¦ä¿è¯9*9ï¼Œå­—ç¬¦é—´æœ‰ç©ºæ ¼
 	//char c = ifs.get();
 	int i = 0;
-	while (ifs.peek() != EOF) {		//·ÀÖ¹¶à¶ÁÒ»ÐÐ
+	while (ifs.peek() != EOF) {		//é˜²æ­¢å¤šè¯»ä¸€è¡Œ
 		ifs >> board[i / 9][i % 9];
 		i++;
 	}
 	ifs.close();
 
 	ofstream ofs;
-	ofs.open("Êý¶À´ð°¸.txt", ofstream::out);
+	ofs.open("æ•°ç‹¬ç­”æ¡ˆ.txt", ofstream::out);
 
 	if (Solution().solveSudoku(board)) {
 		for (int i = 0; i < 81; i++) {
