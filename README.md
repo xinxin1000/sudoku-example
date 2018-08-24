@@ -8,10 +8,4 @@ https://leetcode.com/problems/sudoku-solver/discuss/15748/Sharing-my-2ms-C++-sol
 
 自己在main里面加上了一点从txt里读写，这样可以自己敲进去题目然后得到答案，比只是leetcode测试过了更有趣。
 
-
-
-new to github~
-
-share a good sudoku solving algorithm I've seen when doing leetcode37
-
-add a little in the code to read from txt, where I can write down other sudoku questions.
+question.txt里面需要9*9，字符间有空格。题目中的空格用'.'代替。
