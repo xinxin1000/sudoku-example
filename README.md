@@ -6,7 +6,7 @@
 
 https://leetcode.com/problems/sudoku-solver/discuss/15748/Sharing-my-2ms-C++-solution-with-comments-and-explanations.
 
-自己在main里面加上了一点从txt里读写，这样可以自己敲进去题目然后得到答案，比看只是leetcode测试过更有趣。
+自己在main里面加上了一点从txt里读写，这样可以自己敲进去题目然后得到答案，比只是leetcode测试过了更有趣。
 
 
 
