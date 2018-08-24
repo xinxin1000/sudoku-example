@@ -151,7 +151,7 @@ int main() {
 	vector<vector<char>> board(9, vector<char>(9));	//需要保证board是9*9的，只有数字，空格用'.'代替
 
 	ifstream ifs;
-	ifs.open("数独题目.txt"); //题目的txt要保证9*9，字符间有空格
+	ifs.open("question.txt"); //题目的txt要保证9*9，字符间有空格
 	//char c = ifs.get();
 	int i = 0;
 	while (ifs.peek() != EOF) {		//防止多读一行
@@ -161,7 +161,7 @@ int main() {
 	ifs.close();
 
 	ofstream ofs;
-	ofs.open("数独答案.txt", ofstream::out);
+	ofs.open("answer.txt", ofstream::out);
 
 	if (Solution().solveSudoku(board)) {
 		for (int i = 0; i < 81; i++) {
