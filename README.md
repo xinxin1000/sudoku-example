@@ -1,6 +1,4 @@
-# hello-world
-
-新手入门github，照着guide建了repository，所以顶着helloworld名字然后是想分享的代码。
+# a little sudoku example
 
 做leetcode37的时候看到的解数独的非常棒的方法。在简单回溯的基础上还加上了限制条件，会更快。主要参考
 
